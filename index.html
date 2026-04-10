@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Landon Coonrod — portfolio and professional background."
+    />
+    <title>Landon Coonrod</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Landon Coonrod</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                class="btn btn-small"
+                href="mailto:hello@example.com?subject=Resume%20request"
+                >Résumé</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Hello — I'm</p>
+          <h1>Landon Coonrod</h1>
+          <p class="lede">
+            I build reliable software and clear user experiences. Add your
+            one-line focus here (role, stack, or what you're looking for next).
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View work</a>
+            <a class="btn btn-ghost" href="mailto:hello@example.com"
+              >Email me</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container narrow">
+          <h2>About</h2>
+          <p>
+            Replace this paragraph with a short story: your background,
+            strengths, and how you work with teams. Keep it scannable — 3–5
+            sentences is enough for a first pass.
+          </p>
+          <ul class="pill-list">
+            <li>Your skill or domain</li>
+            <li>Another skill</li>
+            <li>Tools you like</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <h2>Selected projects</h2>
+          <p class="section-intro">
+            Each card should describe a problem, what you did, tech used, and
+            outcome. Swap links when you have demos or repos.
+          </p>
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>Project title</h3>
+              <p>
+                One or two sentences on the problem and your contribution.
+                Outcomes beat buzzwords.
+              </p>
+              <ul class="tag-list">
+                <li>TypeScript</li>
+                <li>API</li>
+              </ul>
+              <p class="project-links">
+                <a href="#" rel="noopener noreferrer">Live</a>
+                <span class="dot" aria-hidden="true">·</span>
+                <a href="#" rel="noopener noreferrer">Code</a>
+              </p>
+            </article>
+            <article class="project-card">
+              <h3>Another project</h3>
+              <p>
+                Describe scope and your role. Link to GitHub or a case study
+                if the work is public.
+              </p>
+              <ul class="tag-list">
+                <li>React</li>
+                <li>Design</li>
+              </ul>
+              <p class="project-links">
+                <a href="#" rel="noopener noreferrer">Code</a>
+              </p>
+            </article>
+            <article class="project-card">
+              <h3>Third highlight</h3>
+              <p>
+                Aim for three to six strong projects rather than a long list of
+                shallow ones.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Data</li>
+              </ul>
+              <p class="project-links">
+                <a href="#" rel="noopener noreferrer">Details</a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container narrow">
+          <h2>Contact</h2>
+          <p>
+            Best way to reach me is email. I'm also on LinkedIn and GitHub —
+            update the links below.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:hello@example.com">hello@example.com</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/PequenoCoder"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Landon Coonrod</p>
+        <p class="footer-note">Built as a static site — fast and easy to host.</p>
+      </div>
+    </footer>
+
+    <script src="/js/main.js" type="module"></script>
+  </body>
+</html>
