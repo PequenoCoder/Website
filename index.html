@@ -185,9 +185,9 @@
         <div class="container">
           <h2>Selected projects</h2>
           <p class="section-intro">
-            Highlights from coursework and research. Add a screenshot for the
-            portfolio card when you like — same folder as the other project
-            images.
+            Highlights from coursework, research, and independent builds —
+            capstone robotics, lab systems, and a vision-to-actuation pipeline
+            for a robotic hand.
           </p>
           <div class="project-grid">
             <article class="project-card">
@@ -261,12 +261,12 @@
             <article class="project-card">
               <a
                 class="project-card__thumb"
-                href="https://landoncoonrod.com"
+                href="https://github.com/PequenoCoder/robot-hand-tracking"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/assets/images/projects/personal-portfolio.svg"
-                  alt=""
+                  src="/assets/images/projects/robot-hand-tracking.svg"
+                  alt="Robot hand tracking project"
                   width="800"
                   height="450"
                   loading="lazy"
@@ -274,24 +274,43 @@
                 />
               </a>
               <div class="project-card__body">
-                <h3>Personal portfolio</h3>
-                <p class="project-meta">This site</p>
+                <h3>Robot hand tracking</h3>
+                <p class="project-meta">OAK (DepthAI) · Raspberry Pi · Arduino</p>
                 <p>
-                  Static, fast-loading portfolio with semantic HTML and modern
-                  CSS, deployed on Cloudflare with a custom domain and HTTPS.
+                  Real-time hand tracking with a Luxonis OAK camera: landmark
+                  geometry drives joint angles, a Raspberry Pi streams control
+                  commands over serial, and an Arduino drives five servos on a
+                  robotic hand — end-to-end perception to actuation.
                 </p>
                 <ul class="tag-list">
-                  <li>HTML / CSS</li>
-                  <li>Cloudflare Workers</li>
-                  <li>Git</li>
+                  <li>Python</li>
+                  <li>DepthAI / OpenCV</li>
+                  <li>Embedded</li>
+                  <li>Serial / servos</li>
                 </ul>
+                <div class="project-video-wrap">
+                  <video
+                    class="project-video"
+                    controls
+                    playsinline
+                    preload="metadata"
+                  >
+                    <source
+                      src="/assets/videos/robot-hand-tracking.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support embedded video.
+                  </video>
+                </div>
                 <p class="project-links">
-                  <a href="https://landoncoonrod.com" rel="noopener noreferrer"
-                    >Live</a
+                  <a
+                    href="https://github.com/PequenoCoder/robot-hand-tracking"
+                    rel="noopener noreferrer"
+                    >Code &amp; docs</a
                   >
                   <span class="dot" aria-hidden="true">·</span>
-                  <a href="https://github.com/PequenoCoder/Website" rel="noopener noreferrer"
-                    >Source</a
+                  <a href="https://landoncoonrod.com" rel="noopener noreferrer"
+                    >This portfolio</a
                   >
                 </p>
               </div>
