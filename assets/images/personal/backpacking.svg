@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Backpacking  replace with backpacking.jpg</title>
+  <defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#0f1a14"/><stop offset="50%" stop-color="#1a2e24"/><stop offset="100%" stop-color="#0c1210"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <path d="M0 420 L200 280 L400 350 L600 200 L800 320 L800 600 L0 600 Z" fill="#15251c" opacity="0.6"/>
+  <text x="400" y="290" fill="#8fd4a2" font-family="system-ui,sans-serif" font-size="22" text-anchor="middle">Backpacking</text>
+  <text x="400" y="325" fill="#6b7c8f" font-family="system-ui,sans-serif" font-size="13" text-anchor="middle">Drop backpacking.jpg here</text>
+</svg>

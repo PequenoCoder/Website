@@ -545,6 +545,50 @@ a:hover {
   opacity: 0.85;
 }
 
+.personal-intro {
+  max-width: 42rem;
+}
+
+.personal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.personal-shot {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.personal-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.personal-shot figcaption {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+.personal-note {
+  margin: 1.5rem 0 0 !important;
+  font-size: 0.85rem !important;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: inline-flex;
