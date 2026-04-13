@@ -582,13 +582,6 @@ a:hover {
   border-top: 1px solid var(--border);
 }
 
-.personal-note {
-  margin: 1.5rem 0 0 !important;
-  font-size: 0.85rem !important;
-  color: var(--text-muted);
-  opacity: 0.9;
-}
-
 @media (max-width: 768px) {
   .nav-toggle {
     display: inline-flex;
