@@ -16,7 +16,9 @@ npx serve .
 |------|---------|
 | `assets/Landon-Coonrod-Resume.pdf` | Résumé (linked from nav & contact) |
 | `assets/images/landon-headshot.jpg` | Hero photo |
-| `assets/images/projects/*.svg` | Placeholder banners — replace with **JPG/PNG** using the same base name (e.g. `haptech-capstone.jpg`) and update `index.html` `src` if you change extension |
+| `assets/images/projects/haptech-capstone.jpg` | Haptech / Franka photo |
+| `assets/images/projects/biomechatronics-lab.jpg` | OpenExo / lab photo |
+| `assets/images/projects/personal-portfolio.svg` | Placeholder — swap for a site screenshot (e.g. `personal-portfolio.jpg`) when ready |
 
 ## Cloudflare Pages / Workers
 

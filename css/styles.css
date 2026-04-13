@@ -353,6 +353,12 @@ a:hover {
   object-fit: cover;
 }
 
+.project-card__thumb--portrait img {
+  aspect-ratio: 996 / 1536;
+  object-position: center 20%;
+  max-height: 420px;
+}
+
 .project-card__body {
   padding: 1.25rem 1.35rem 1.35rem;
 }
