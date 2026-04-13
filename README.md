@@ -18,6 +18,7 @@ npx serve .
 | `assets/images/landon-headshot.jpg` | Hero photo |
 | `assets/images/projects/haptech-capstone.jpg` | Haptech / Franka photo |
 | `assets/images/projects/biomechatronics-lab.jpg` | OpenExo / lab photo |
+| `assets/images/personal/` | Fishing / backpacking / snowboarding — SVG placeholders; replace with `.jpg` and update `index.html` `src` if needed |
 | `assets/videos/robot-hand-tracking.mp4` | **Primary** web demo (H.264) — works on Windows/Android/desktop Chrome |
 | `assets/videos/robot-hand-tracking.mov` | iPhone **QuickTime** source / fallback for Safari |
 
