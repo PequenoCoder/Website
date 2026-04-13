@@ -195,7 +195,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: clamp(1rem, 3vw, 1.75rem);
+  justify-content: flex-start;
+  gap: clamp(1.25rem, 4vw, 2.25rem);
   margin-bottom: 1.25rem;
 }
 
@@ -205,8 +206,8 @@ a:hover {
 
 .hero-photo {
   display: block;
-  width: clamp(112px, 22vw, 160px);
-  height: clamp(112px, 22vw, 160px);
+  width: clamp(140px, 28vw, 220px);
+  height: clamp(140px, 28vw, 220px);
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid color-mix(in srgb, var(--text) 22%, transparent);
