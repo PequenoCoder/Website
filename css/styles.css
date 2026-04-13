@@ -321,6 +321,15 @@ a:hover {
   border: 1px solid var(--border);
 }
 
+.pill-list--secondary {
+  margin-top: 0.75rem;
+}
+
+.pill-list--secondary li {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
