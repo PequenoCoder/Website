@@ -18,8 +18,8 @@ npx serve .
 | `assets/images/landon-headshot.jpg` | Hero photo |
 | `assets/images/projects/haptech-capstone.jpg` | Haptech / Franka photo |
 | `assets/images/projects/biomechatronics-lab.jpg` | OpenExo / lab photo |
-| `assets/videos/robot-hand-tracking.mov` | Demo clip in the project card (top media). Source: `IMG_2086.MOV` |
-| `assets/videos/robot-hand-tracking.mp4` | *(Optional)* H.264 fallback for browsers that don’t play `.mov` well |
+| `assets/videos/robot-hand-tracking.mp4` | **Primary** web demo (H.264) — works on Windows/Android/desktop Chrome |
+| `assets/videos/robot-hand-tracking.mov` | iPhone **QuickTime** source / fallback for Safari |
 
 ## Cloudflare Pages / Workers
 

@@ -362,12 +362,16 @@ a:hover {
   object-fit: cover;
 }
 
+/* Full frame visible: no forced 16:9 crop (phone videos are often portrait). */
+.project-card__thumb--video-top {
+  background: #0a0d12;
+}
+
 .project-card__thumb--video-top .project-thumb-video {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  vertical-align: top;
   background: #0a0d12;
 }
 
