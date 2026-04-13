@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Landon Coonrod — portfolio and professional background."
+      content="Landon Coonrod — software engineer focused on real-time systems, robotics, and full-stack delivery. B.S. Computer Science, NAU."
     />
-    <title>Landon Coonrod</title>
+    <title>Landon Coonrod · Software Engineer</title>
+    <meta property="og:title" content="Landon Coonrod · Software Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio, experience, and projects — robotics, embedded systems, and web."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,12 +40,15 @@
         <nav id="site-nav" class="site-nav" aria-label="Primary">
           <ul class="nav-list">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
               <a
                 class="btn btn-small"
-                href="mailto:hello@example.com?subject=Resume%20request"
+                href="/assets/Landon-Coonrod-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Résumé</a
               >
             </li>
@@ -51,18 +59,40 @@
 
     <main id="main">
       <section class="hero">
-        <div class="container">
-          <p class="eyebrow">Hello — I'm</p>
-          <h1>Landon Coonrod</h1>
-          <p class="lede">
-            I build reliable software and clear user experiences. Add your
-            one-line focus here (role, stack, or what you're looking for next).
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#projects">View work</a>
-            <a class="btn btn-ghost" href="mailto:hello@example.com"
-              >Email me</a
-            >
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello — I'm</p>
+            <h1>Landon Coonrod</h1>
+            <p class="lede">
+              Software engineer building end-to-end systems that connect software
+              to real hardware — real-time control, computer vision, embedded
+              deployment, and web delivery. I’m strongest where integration gets
+              messy and latency matters.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#projects">View projects</a>
+              <a class="btn btn-ghost" href="mailto:landon.coonrod12@gmail.com"
+                >Email me</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="/assets/Landon-Coonrod-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download résumé (PDF)</a
+              >
+            </div>
+          </div>
+          <div class="hero-photo-wrap">
+            <img
+              class="hero-photo"
+              src="/assets/images/landon-headshot.jpg"
+              width="640"
+              height="458"
+              alt="Landon Coonrod"
+              loading="eager"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
@@ -71,95 +101,236 @@
         <div class="container narrow">
           <h2>About</h2>
           <p>
-            Replace this paragraph with a short story: your background,
-            strengths, and how you work with teams. Keep it scannable — 3–5
-            sentences is enough for a first pass.
+            I’m a Computer Science student at Northern Arizona University with
+            hands-on research experience in the Biomechatronics Lab — shipping
+            control software, data pipelines, and tools other researchers rely
+            on every day. I enjoy owning problems across the stack: serial and
+            BLE links, GUIs for experimenters, and tight real-time loops on
+            resource-constrained hardware.
           </p>
-          <ul class="pill-list">
-            <li>Your skill or domain</li>
-            <li>Another skill</li>
-            <li>Tools you like</li>
+          <ul class="pill-list" aria-label="Technical strengths">
+            <li>Python · C++ · Java · JavaScript</li>
+            <li>Real-time &amp; embedded systems</li>
+            <li>Linux · Git · serial &amp; BLE</li>
+            <li>Computer vision &amp; ML integration</li>
           </ul>
         </div>
       </section>
 
-      <section id="projects" class="section section-alt">
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <h2>Experience</h2>
+          <p class="section-intro">
+            Roles and milestones drawn from my résumé — details available in the
+            PDF.
+          </p>
+
+          <article class="role-card">
+            <header class="role-card__head">
+              <div>
+                <h3>Software Researcher, Level 4</h3>
+                <p class="role-meta">
+                  NAU Biomechatronics Lab · Flagstaff, AZ
+                </p>
+              </div>
+              <p class="role-dates">Dec 2024 – Present</p>
+            </header>
+            <ul class="role-bullets">
+              <li>
+                Designed a cross-platform robotic control stack (Apple,
+                Raspberry Pi, Windows, Linux) behind a single unified codebase.
+              </li>
+              <li>
+                Built an event-driven architecture with async I/O for serial
+                traffic, supporting a <strong>100&nbsp;Hz</strong> real-time
+                control loop.
+              </li>
+              <li>
+                Integrated Google MediaPipe models with a custom signal
+                processing pipeline for lab experiments.
+              </li>
+              <li>
+                Improved data-streaming efficiency by
+                <strong>~80%</strong> by cutting multi-process overhead and
+                tuning the pipeline.
+              </li>
+              <li>
+                Implemented async Bluetooth Low Energy pipelines with Bleak for
+                wireless exoskeleton control and sensor streaming.
+              </li>
+              <li>
+                Delivered a multi-view monitoring GUI with real-time
+                matplotlib visualization for device state.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role-card role-card--compact">
+            <header class="role-card__head">
+              <div>
+                <h3>B.S. Computer Science</h3>
+                <p class="role-meta">Northern Arizona University</p>
+              </div>
+              <p class="role-dates">Jan 2023 – May 2026</p>
+            </header>
+            <p class="role-edu-note">
+              Major: Computer Science · Capstone Award (2025) — Outstanding
+              Senior Design Project
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
         <div class="container">
           <h2>Selected projects</h2>
           <p class="section-intro">
-            Each card should describe a problem, what you did, tech used, and
-            outcome. Swap links when you have demos or repos.
+            Highlights from coursework and research. Replace placeholder images
+            in <code class="inline-code">assets/images/projects/</code> with
+            your own screenshots anytime (same filenames,
+            <span class="nowrap">JPG or PNG</span>).
           </p>
           <div class="project-grid">
             <article class="project-card">
-              <h3>Project title</h3>
-              <p>
-                One or two sentences on the problem and your contribution.
-                Outcomes beat buzzwords.
-              </p>
-              <ul class="tag-list">
-                <li>TypeScript</li>
-                <li>API</li>
-              </ul>
-              <p class="project-links">
-                <a href="#" rel="noopener noreferrer">Live</a>
-                <span class="dot" aria-hidden="true">·</span>
-                <a href="#" rel="noopener noreferrer">Code</a>
-              </p>
+              <a
+                class="project-card__thumb"
+                href="https://github.com/PequenoCoder"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/assets/images/projects/haptech-capstone.svg"
+                  alt=""
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="project-card__body">
+                <h3>Haptech capstone · Team lead</h3>
+                <p class="project-meta">NAU · Jan 2025 – Dec 2025</p>
+                <p>
+                  Led a team of three on a haptic rendering system coupling a
+                  Franka Research 3 arm with the CHAI3D engine for realistic
+                  virtual touch feedback.
+                </p>
+                <ul class="tag-list">
+                  <li>C++</li>
+                  <li>Franka Emika API</li>
+                  <li>CHAI3D</li>
+                  <li>Real-time control</li>
+                </ul>
+                <p class="project-links">
+                  <a href="https://github.com/PequenoCoder" rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </p>
+              </div>
             </article>
+
             <article class="project-card">
-              <h3>Another project</h3>
-              <p>
-                Describe scope and your role. Link to GitHub or a case study
-                if the work is public.
-              </p>
-              <ul class="tag-list">
-                <li>React</li>
-                <li>Design</li>
-              </ul>
-              <p class="project-links">
-                <a href="#" rel="noopener noreferrer">Code</a>
-              </p>
+              <div class="project-card__thumb">
+                <img
+                  src="/assets/images/projects/biomechatronics-lab.svg"
+                  alt=""
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>Biomechatronics lab systems</h3>
+                <p class="project-meta">Research software · 2024 – Present</p>
+                <p>
+                  Cross-platform controllers, BLE sensor streams, vision
+                  pipelines, and monitoring GUIs supporting lab research —
+                  summarized above under NAU experience.
+                </p>
+                <ul class="tag-list">
+                  <li>Python</li>
+                  <li>Bleak / BLE</li>
+                  <li>MediaPipe</li>
+                  <li>matplotlib</li>
+                </ul>
+                <p class="project-links">
+                  <span class="project-links-note">Internal lab tooling</span>
+                </p>
+              </div>
             </article>
+
             <article class="project-card">
-              <h3>Third highlight</h3>
-              <p>
-                Aim for three to six strong projects rather than a long list of
-                shallow ones.
-              </p>
-              <ul class="tag-list">
-                <li>Python</li>
-                <li>Data</li>
-              </ul>
-              <p class="project-links">
-                <a href="#" rel="noopener noreferrer">Details</a>
-              </p>
+              <a
+                class="project-card__thumb"
+                href="https://landoncoonrod.com"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/assets/images/projects/personal-portfolio.svg"
+                  alt=""
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="project-card__body">
+                <h3>Personal portfolio</h3>
+                <p class="project-meta">This site</p>
+                <p>
+                  Static, fast-loading portfolio with semantic HTML and modern
+                  CSS, deployed on Cloudflare with a custom domain and HTTPS.
+                </p>
+                <ul class="tag-list">
+                  <li>HTML / CSS</li>
+                  <li>Cloudflare Workers</li>
+                  <li>Git</li>
+                </ul>
+                <p class="project-links">
+                  <a href="https://landoncoonrod.com" rel="noopener noreferrer"
+                    >Live</a
+                  >
+                  <span class="dot" aria-hidden="true">·</span>
+                  <a href="https://github.com/PequenoCoder/Website" rel="noopener noreferrer"
+                    >Source</a
+                  >
+                </p>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section">
+      <section id="contact" class="section section-alt">
         <div class="container narrow">
           <h2>Contact</h2>
           <p>
-            Best way to reach me is email. I'm also on LinkedIn and GitHub —
-            update the links below.
+            I’m based in Bend, OR, and finishing my degree at NAU. For roles,
+            collaborations, or a copy of my résumé, reach out by email or
+            GitHub.
           </p>
           <ul class="contact-list">
             <li>
-              <a href="mailto:hello@example.com">hello@example.com</a>
+              <a href="mailto:landon.coonrod12@gmail.com"
+                >landon.coonrod12@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+15419778008">(541) 977-8008</a>
             </li>
             <li>
               <a
                 href="https://github.com/PequenoCoder"
                 rel="noopener noreferrer"
-                >GitHub</a
+                >github.com/PequenoCoder</a
               >
             </li>
             <li>
-              <a href="https://www.linkedin.com/" rel="noopener noreferrer"
-                >LinkedIn</a
+              <a
+                href="/assets/Landon-Coonrod-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Résumé (PDF)</a
               >
             </li>
           </ul>
@@ -170,7 +341,9 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> Landon Coonrod</p>
-        <p class="footer-note">Built as a static site — fast and easy to host.</p>
+        <p class="footer-note">
+          Bend, OR · Computer Science, Northern Arizona University
+        </p>
       </div>
     </footer>
 

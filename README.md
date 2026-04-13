@@ -1,25 +1,29 @@
 # Website
 
-Personal portfolio — static HTML/CSS, ready for [Cloudflare Pages](https://pages.cloudflare.com/).
+Personal portfolio for **Landon Coonrod** — static HTML/CSS, deployed on Cloudflare.
 
 ## Local preview
 
-Open `index.html` in a browser, or from this folder:
+From this folder:
 
 ```bash
 npx serve .
 ```
 
-## Cloudflare Pages
+## Assets
 
-- **Framework preset:** None  
+| Path | Purpose |
+|------|---------|
+| `assets/Landon-Coonrod-Resume.pdf` | Résumé (linked from nav & contact) |
+| `assets/images/landon-headshot.jpg` | Hero photo |
+| `assets/images/projects/*.svg` | Placeholder banners — replace with **JPG/PNG** using the same base name (e.g. `haptech-capstone.jpg`) and update `index.html` `src` if you change extension |
+
+## Cloudflare Pages / Workers
+
 - **Build command:** *(empty)*  
-- **Build output directory:** `/` (root)
+- **Output:** `/` (repository root)
 
-Add your domain under **Custom domains** and set DNS at IONOS to match Cloudflare’s instructions.
+## Edit content
 
-## Customize
-
-- Edit copy in `index.html`.
-- Tweak look in `css/styles.css`.
-- Add a real email in `index.html` (and optional `resume.pdf` in the root if you link to it).
+- Copy: `index.html`
+- Layout & theme: `css/styles.css`
