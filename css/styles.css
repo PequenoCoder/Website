@@ -1,15 +1,16 @@
 :root {
-  --bg: #0c0f14;
-  --bg-elevated: #131824;
-  --text: #e8eaef;
-  --text-muted: #9aa3b2;
-  --accent: #7cb8ff;
-  --accent-soft: rgba(124, 184, 255, 0.15);
-  --border: rgba(255, 255, 255, 0.08);
+  --bg: #0f172a;
+  --bg-elevated: #172554;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent: #7dd3fc;
+  --accent-soft: rgba(125, 211, 252, 0.14);
+  --border: rgba(241, 245, 249, 0.12);
+  --snow-glow: rgba(255, 255, 255, 0.06);
   --radius: 12px;
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-display: "Fraunces", Georgia, serif;
-  --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.45);
 }
 
 *,
@@ -28,12 +29,18 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   color: var(--text);
-  background: radial-gradient(
-      1200px 600px at 15% -10%,
-      rgba(124, 184, 255, 0.12),
+  background:
+    radial-gradient(
+      ellipse 900px 500px at 80% 0%,
+      rgba(125, 211, 252, 0.08),
       transparent 55%
     ),
-    var(--bg);
+    radial-gradient(
+      ellipse 700px 400px at 10% 30%,
+      var(--snow-glow),
+      transparent 50%
+    ),
+    linear-gradient(180deg, #0c162e 0%, var(--bg) 38%, #0b1328 100%);
   min-height: 100vh;
 }
 
@@ -49,7 +56,7 @@ a {
 }
 
 a:hover {
-  color: #a8d0ff;
+  color: #bae6fd;
 }
 
 .sr-only {
@@ -165,45 +172,59 @@ a:hover {
 }
 
 .hero {
-  padding: clamp(3rem, 8vw, 6rem) 0 clamp(4rem, 10vw, 7rem);
+  padding: 0 0 clamp(3rem, 8vw, 5.5rem);
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr min(320px, 88vw);
-  gap: clamp(2rem, 5vw, 3.5rem);
-  align-items: center;
-}
-
-.hero-copy {
-  min-width: 0;
-}
-
-.hero-photo-wrap {
-  justify-self: end;
+.hero-banner {
   width: 100%;
-  max-width: 320px;
+  min-height: min(38vw, 280px);
+  max-height: 360px;
+  background-color: var(--bg-elevated);
+  background-image: url("/assets/images/hero-banner.jpg");
+  background-size: cover;
+  background-position: center 38%;
+  border-bottom: 1px solid var(--border);
+  box-shadow: inset 0 -48px 56px rgba(15, 23, 42, 0.72);
+}
+
+.hero-inner {
+  padding-top: clamp(2rem, 5vw, 3rem);
+}
+
+.hero-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 1.75rem);
+  margin-bottom: 1.25rem;
+}
+
+.hero-avatar-wrap {
+  flex-shrink: 0;
 }
 
 .hero-photo {
   display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  width: clamp(112px, 22vw, 160px);
+  height: clamp(112px, 22vw, 160px);
+  border-radius: 50%;
   object-fit: cover;
-  aspect-ratio: 2048 / 1463;
+  border: 3px solid color-mix(in srgb, var(--text) 22%, transparent);
+  box-shadow: var(--shadow), 0 0 0 1px var(--border);
 }
 
-@media (max-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
+.hero-titles {
+  min-width: 0;
+}
 
-  .hero-photo-wrap {
-    justify-self: center;
-    max-width: 280px;
+.hero-titles .eyebrow {
+  margin-bottom: 0.45rem;
+}
+
+@media (max-width: 520px) {
+  .hero-heading {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -222,6 +243,10 @@ a:hover {
   letter-spacing: -0.03em;
   line-height: 1.15;
   margin: 0 0 1rem;
+}
+
+.hero .hero-titles h1 {
+  margin-bottom: 0;
 }
 
 .lede {
@@ -248,12 +273,12 @@ a:hover {
   text-decoration: none;
   border: 1px solid transparent;
   background: var(--accent);
-  color: #0c0f14;
+  color: #0f172a;
 }
 
 .btn:hover {
   filter: brightness(1.05);
-  color: #0c0f14;
+  color: #0f172a;
 }
 
 .btn-ghost {
@@ -292,8 +317,8 @@ a:hover {
 .section-alt {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.02),
-    transparent 40%
+    rgba(255, 255, 255, 0.04),
+    transparent 45%
   );
   border-block: 1px solid var(--border);
 }
@@ -364,7 +389,7 @@ a:hover {
 
 /* Full frame visible: no forced 16:9 crop (phone videos are often portrait). */
 .project-card__thumb--video-top {
-  background: #0a0d12;
+  background: #0f172a;
 }
 
 .project-card__thumb--video-top .project-thumb-video {
@@ -372,7 +397,7 @@ a:hover {
   width: 100%;
   height: auto;
   vertical-align: top;
-  background: #0a0d12;
+  background: #0f172a;
 }
 
 .project-card__thumb--portrait img {
