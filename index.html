@@ -259,20 +259,25 @@
             </article>
 
             <article class="project-card">
-              <a
-                class="project-card__thumb"
-                href="https://github.com/PequenoCoder/robot-hand-tracking"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/assets/images/projects/robot-hand-tracking.svg"
-                  alt="Robot hand tracking project"
-                  width="800"
-                  height="450"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
+              <div class="project-card__thumb project-card__thumb--video-top">
+                <video
+                  class="project-thumb-video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  aria-label="Robot hand tracking demo — hand in motion"
+                >
+                  <source
+                    src="/assets/videos/robot-hand-tracking.mov"
+                    type="video/quicktime"
+                  />
+                  <source
+                    src="/assets/videos/robot-hand-tracking.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support embedded video.
+                </video>
+              </div>
               <div class="project-card__body">
                 <h3>Robot hand tracking</h3>
                 <p class="project-meta">OAK (DepthAI) · Raspberry Pi · Arduino</p>
@@ -288,20 +293,6 @@
                   <li>Embedded</li>
                   <li>Serial / servos</li>
                 </ul>
-                <div class="project-video-wrap">
-                  <video
-                    class="project-video"
-                    controls
-                    playsinline
-                    preload="metadata"
-                  >
-                    <source
-                      src="/assets/videos/robot-hand-tracking.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support embedded video.
-                  </video>
-                </div>
                 <p class="project-links">
                   <a
                     href="https://github.com/PequenoCoder/robot-hand-tracking"

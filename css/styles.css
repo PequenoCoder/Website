@@ -353,6 +353,15 @@ a:hover {
   object-fit: cover;
 }
 
+.project-card__thumb--video-top .project-thumb-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #0a0d12;
+}
+
 .project-card__thumb--portrait img {
   aspect-ratio: 996 / 1536;
   object-position: center 20%;
@@ -384,21 +393,6 @@ a:hover {
   font-size: 0.9rem;
   color: var(--text-muted);
   font-style: italic;
-}
-
-.project-video-wrap {
-  margin: 0 0 1rem;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: #0a0d12;
-}
-
-.project-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
 }
 
 .role-card {
