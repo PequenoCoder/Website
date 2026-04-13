@@ -261,6 +261,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  position: relative;
+  z-index: 1;
 }
 
 .btn {
@@ -275,6 +277,7 @@ a:hover {
   border: 1px solid transparent;
   background: var(--accent);
   color: #0f172a;
+  cursor: pointer;
 }
 
 .btn:hover {
